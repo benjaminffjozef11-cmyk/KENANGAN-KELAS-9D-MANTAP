@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memori Sobat - Album Kenangan Digital</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Arimo:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Kelas<span>9D</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#kelas7">Kelas 7</a></li>
+            <li><a href="#kelas8">Kelas 8</a></li>
+            <li><a href="#kelas9">Kelas 9</a></li>
+            <li><a href="#permainan">Permainan</a></li>
+            <li><a href="#struktur">Struktur</a></li>
+            <li><a href="#siswa">Siswa</a></li>
+            <li><a href="#guestbook">Pesan</a></li>
+        </ul>
+        <button id="mode-btn" class="btn-mode"><i class="fas fa-moon"></i></button>
+    </nav>
+
+    <header id="home" class="hero">
+        <div data-aos="zoom-out" data-aos-duration="1500">
+            <h1>9D "Delightful"</h1>
+            <p>"Tiga tahun lalu kita datang sebagai asing, hari ini kita melangkah pergi sebagai keluarga. Simpan semua kenangan kita sekecil kecilnya, karena kisah kita adalah abadi."</p>
+            <a href="#kelas7" class="btn-explore">Lihat Kenangan <i class="fas fa-arrow-right" style="margin-left: 10px;"></i></a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="kelas7" class="section-header" data-aos="fade-right">
+            <h2>Kelas 7: Awal Cerita</h2>
+        </section>
+        <div class="slick-gallery-container" data-aos="fade-up">
+            <div class="slick-gallery">
+                <div class="slick-item" onclick="openImg('https://images.unsplash.com/photo-1577891729319-f4871c6ec217?q=80&w=2069&auto=format&fit=crop', 'Masa Orientasi Siswa', 'Hari-hari awal kita mengenal satu sama lain.')">
+                    <img src="https://images.unsplash.com/photo-1577891729319-f4871c6ec217?q=80&w=2069" alt="MOS">
+                    <div class="carousel-caption-overlay">
+                        <h3>Masa Orientasi Siswa</h3>
+                        <p>Hari-hari awal kita mengenal satu sama lain.</p>
+                    </div>
+                </div>
+                <div class="slick-item" onclick="openImg('https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=2070&auto=format&fit=crop', 'Momen Kantin', 'Tawa di sela jam istirahat.')">
+                    <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=2070" alt="Kantin">
+                    <div class="carousel-caption-overlay">
+                        <h3>Momen Kantin</h3>
+                        <p>Tawa di sela jam istirahat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="kelas8" class="section-header" data-aos="fade-right">
+            <h2>Kelas 8: Persahabatan</h2>
+        </section>
+        <div class="slick-gallery-container" data-aos="fade-up">
+            <div class="slick-gallery">
+                <div class="slick-item" onclick="openImg('https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=2069&auto=format&fit=crop', 'Study Tour & Camping', 'Petualangan bersama yang tak terlupakan.')">
+                    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=2069" alt="Study Tour">
+                    <div class="carousel-caption-overlay">
+                        <h3>Study Tour & Camping</h3>
+                        <p>Petualangan bersama yang tak terlupakan.</p>
+                    </div>
+                </div>
+                <div class="slick-item" onclick="openImg('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop', 'Solidaritas', 'Kerja kelompok atau sekadar nongkrong?')">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071" alt="Solidaritas">
+                    <div class="carousel-caption-overlay">
+                        <h3>Solidaritas</h3>
+                        <p>Kerja kelompok atau sekadar nongkrong?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="kelas9" class="section-header" data-aos="fade-right">
+            <h2>Kelas 9: Sampai Jumpa Lagi</h2>
+        </section>
+        <div class="slick-gallery-container" data-aos="fade-up">
+            <div class="slick-gallery">
+                <div class="slick-item" onclick="openImg('https://images.unsplash.com/photo-1541339907198-e08756ebafe3?q=80&w=2070&auto=format&fit=crop', 'Momen Kelulusan', 'Saatnya berpisah untuk mengejar mimpi masing-masing.')">
+                    <img src="https://images.unsplash.com/photo-1541339907198-e08756ebafe3?q=80&w=2070" alt="Kelulusan">
+                    <div class="carousel-caption-overlay">
+                        <h3>Momen Kelulusan</h3>
+                        <p>Mengejar mimpi masing-masing.</p>
+                    </div>
+                </div>
+                <div class="slick-item" onclick="openImg('https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop', 'Foto Angkatan', 'Kenangan terakhir bersama seluruh teman sekelas.')">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070" alt="Foto Bersama">
+                    <div class="carousel-caption-overlay">
+                        <h3>Foto Angkatan</h3>
+                        <p>Kenangan terakhir bersama seluruh teman sekelas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="permainan" class="section-header" data-aos="fade-right">
+            <h2>Permainan dikelas kami</h2>
+        </section>
+        <div class="slick-gallery-container" data-aos="fade-up">
+            <div class="slick-gallery">
+                <div class="slick-item" onclick="openImg('https://images.unsplash.com/photo-1541339907198-e08756ebafe3?q=80&w=2070&auto=format&fit=crop', 'Momen Kelulusan', 'Saatnya berpisah untuk mengejar mimpi masing-masing.')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNq7_3-BZkITqfbSzyWkyJI2ZcPiwVL-Zgsg&s" alt="Kelulusan">
+                    <div class="carousel-caption-overlay">
+                        <h3>Catur</h3>
+                        <p>Mengejar mimpi masing-masing.</p>
+                    </div>
+                </div>
+                <div class="slick-item" onclick="openImg('https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop', 'Foto Angkatan', 'Kenangan terakhir bersama seluruh teman sekelas.')">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070" alt="Foto Bersama">
+                    <div class="carousel-caption-overlay">
+                        <h3>Foto Angkatan</h3>
+                        <p>Kenangan terakhir bersama seluruh teman sekelas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="struktur" class="section-header" data-aos="fade-right">
+            <h2>Struktur Organisasi Kelas</h2>
+        </section>
+        
+        <div class="structure-container" data-aos="fade-up">
+            <div class="structure-row">
+                <div class="structure-card">
+                    <img src="https://al-auliya.sch.id/wp-content/uploads/2023/09/DSC07148-FILEminimizer-1024x683.jpg" alt="Wali Kelas" class="member-photo">
+                    <p class="member-role">Wali Kelas</p>
+                    <p class="member-name">Nama Guru, S.Pd.</p>
+                </div>
+            </div>
+            
+            <div class="structure-row">
+                <div class="structure-card">
+                    <img src="https://via.placeholder.com/150/555555/ffffff?text=Siswa" alt="Ketua Kelas" class="member-photo">
+                    <p class="member-role">Ketua Kelas</p>
+                    <p class="member-name">Nama Ketua</p>
+                </div>
+                <div class="structure-card">
+                    <img src="https://via.placeholder.com/150/555555/ffffff?text=Siswa" alt="Wakil Ketua" class="member-photo">
+                    <p class="member-role">Wakil Ketua</p>
+                    <p class="member-name">Nama Wakil</p>
+                </div>
+            </div>
+            
+            <div class="structure-row">
+                <div class="structure-card">
+                    <img src="https://via.placeholder.com/150/555555/ffffff?text=Siswa" alt="Sekretaris" class="member-photo">
+                    <p class="member-role">Sekretaris</p>
+                    <p class="member-name">Nama Sekretaris 1</p>
+                </div>
+                <div class="structure-card">
+                    <img src="https://via.placeholder.com/150/555555/ffffff?text=Siswa" alt="Bendahara" class="member-photo">
+                    <p class="member-role">Sekretaris</p>
+                    <p class="member-name">Nama Sekretaris 2</p>
+                </div>
+            </div>
+
+            <div class="structure-row">
+                <div class="structure-card">
+                    <img src="https://via.placeholder.com/150/555555/ffffff?text=Siswa" alt="Sekretaris" class="member-photo">
+                    <p class="member-role">Bendahara</p>
+                    <p class="member-name">Nama Bendahara 1</p>
+                </div>
+                <div class="structure-card">
+                    <img src="https://via.placeholder.com/150/555555/ffffff?text=Siswa" alt="Bendahara" class="member-photo">
+                    <p class="member-role">Bendahara</p>
+                    <p class="member-name">Nama Bendahara 2</p>
+                </div>
+            </div>
+        </div>
+
+        <section id="siswa" class="section-header" data-aos="fade-right">
+            <h2>Daftar Nama Siswa</h2>
+        </section>
+        
+        <div class="student-grid" data-aos="fade-up">
+            <div class="student-card">
+                <img src="https://png.pngtree.com/png-clipart/20221020/original/pngtree-indonesian-boy-go-to-school-walking-happily-lifting-hand-fist-murid-png-image_8707140.png" alt="Siswa 1" class="student-photo">
+                <p class="student-name">Andre</p>
+            </div>
+            <div class="student-card">
+                <img src="https://via.placeholder.com/100/aaaaaa/ffffff?text=2" alt="Siswa 2" class="student-photo">
+                <p class="student-name">Budi Santoso</p>
+            </div>
+            <div class="student-card">
+                <img src="https://via.placeholder.com/100/aaaaaa/ffffff?text=3" alt="Siswa 3" class="student-photo">
+                <p class="student-name">Citra Dewi</p>
+            </div>
+            <div class="student-card">
+                <img src="https://via.placeholder.com/100/aaaaaa/ffffff?text=4" alt="Siswa 4" class="student-photo">
+                <p class="student-name">Dedi Kurniawan</p>
+            </div>
+            <div class="student-card">
+                <img src="https://via.placeholder.com/100/aaaaaa/ffffff?text=5" alt="Siswa 5" class="student-photo">
+                <p class="student-name">Eka Putri</p>
+            </div>
+            <div class="student-card">
+                <img src="https://via.placeholder.com/100/aaaaaa/ffffff?text=6" alt="Siswa 6" class="student-photo">
+                <p class="student-name">Fajar Hidayat</p>
+            </div>
+        </div>
+    </main>
+
+    <section id="guestbook" class="guestbook">
+        <div class="form-container" data-aos="fade-up">
+            <h2 style="margin-bottom: 15px; text-align: center;">Pesan Terakhir</h2>
+            <div class="input-group">
+                <input type="text" id="name" placeholder="Siapa namamu?">
+                <textarea id="message" rows="4" placeholder="Tulis pesan..."></textarea>
+                <button class="btn-send" onclick="addMessage()">Kirim Pesan <i class="fas fa-paper-plane" style="margin-left: 8px;"></i></button>
+            </div>
+        </div>
+        <div id="messages-list"></div>
+    </section>
+
+    <div id="modal" class="modal" onclick="closeImg()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close-modal" onclick="closeImg()">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <p id="modal-caption" style="color: white; margin-top: 25px;"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 ANGKATAN KITA • DIBUAT DENGAN RASA RINDU</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
